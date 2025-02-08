@@ -4,6 +4,12 @@ export type Language = 'en' | 'hi' | 'bn' | 'te' | 'ta' | 'mr' | 'gu' | 'pa';
 export interface FIRData {
   id: string;
   url: string;
+  status: 'pending' | 'in_progress' | 'resolved' | 'closed';
+  station: string;
+  date: string;
+  type: string;
+  description: string;
+  language: Language;
 }
 
 export interface Translation {
